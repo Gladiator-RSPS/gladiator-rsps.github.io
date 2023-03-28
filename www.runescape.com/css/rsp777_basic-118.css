@@ -1,0 +1,351 @@
+/*
+
+
+
+*/
+body {
+    background: black;
+    color: white;
+    font-family: Arial,Helvetica,sans-serif;
+    font-size: 13px;
+    background-image: url(../img/rsp777/bg2.jpg);
+    background-position: top center;
+    background-repeat: repeat-y;
+    text-align: center;
+    margin: 0;
+    min-width: 960px;
+    overflow-y: scroll;
+}
+
+.centerDiv {
+    background: url(../img/rsp777/bg2.jpg) repeat-y scroll center top black;
+    margin: 0 auto;
+    overflow: hidden;
+    position: relative;
+    width: 100%;
+}
+
+div#body {
+    width: 765px;
+    margin: 10px auto 10px auto;
+    text-align: left;
+    position: relative;
+}
+
+div,td {
+    font-family: Arial,Helvetica,sans-serif;
+    font-size: 13px;
+}
+
+a:hover {
+    text-decoration: underline;
+}
+
+img {
+    border: 0;
+}
+
+img a:hover {
+    text-decoration: none;
+}
+
+.titleframe {
+    width: 500px;
+    margin-left: auto;
+    margin-right: auto;
+    padding: 4px;
+    text-align: center;
+}
+
+.frame {
+    width: 753px;
+    margin-left: auto;
+    margin-right: auto;
+    padding: 4px;
+}
+
+.tandc {
+    clear: both;
+    font-size: 11px;
+    margin: auto;
+    position: relative;
+    text-align: center;
+    width: 765px;
+}
+
+.tandc__copy{
+ margin: auto;
+ width: 470px;
+}
+
+.tandc > a {
+    display: block;
+    position: absolute;
+    left: 25px;
+    top: 6px;
+}
+
+a.tandc__pegi {
+    margin: 15px 0;
+    font-size: 0;
+    display: block;
+    padding: 0 15px;
+    position: static;
+}
+
+.tandc__pegi img:hover {
+    filter: brightness(1.3);
+}
+
+.m-pegi__icons {
+    display: flex;
+    justify-content: center;
+}
+
+.m-pegi__age {
+    height: 65px;
+}
+
+.m-pegi__descriptor {
+    height: 55px;
+    vertical-align: top;
+    margin-left: 4px;
+}
+
+.m-pegi__strap {
+    font-size: 10px;
+    text-align: center;
+}
+
+.scroll {
+    color: black;
+}
+
+.heading {
+    text-align: center;
+    margin: 6px;
+}
+
+.heading span {
+    width: 125px;
+    margin: 0 auto;
+    display: block;
+    background-image: url(../img/rsp777/smbrownback.jpg);
+    border: 3px solid #3E3B23;
+    border-top: 3px solid #7C774A;
+    border-left: 3px solid #7C774A;
+    background-color: #4D422E;
+    padding: 3px 10px 3px 10px;
+}
+
+a {
+    color: #90c040;
+    text-decoration: none;
+}
+
+.scroll a {
+    color: #7B4F17;
+    font-weight: bold;
+}
+
+.e {
+    border: 2px solid #382418;
+    background-color: black;
+}
+
+.wide_e {
+    background-color: black;
+    border: 2px solid #382418;
+    margin-top: 10px;
+    overflow: hidden;
+    position: relative;
+}
+
+div.horizontalscroll {
+    width: 765px;
+    height: 159px;
+    overflow: hidden;
+    margin: 5px 0;
+    background-color: #C2AB79;
+    background-image: url(../img/rsp777/scroll/horizontal_scroll.gif);
+    position: relative;
+}
+
+div.horizontalscroll-content {
+    margin: 15px 40px;
+    color: #000000;
+    position: relative;
+}
+
+div.widescroll {
+    width: 735px;
+    background-color: #C2AB79;
+    margin: 0 10px 0 15px;
+    position: relative;
+}
+
+div.widescroll-bgimg {
+    width: 745px;
+    position: relative;
+    margin: 0 -5px;
+    background-image: url(../img/rsp777/scroll/backdrop_745.gif);
+    background-repeat: repeat-y;
+}
+
+div.widescroll-content {
+    padding: 25px 10px;
+    color: #000000;
+    position: relative;
+    margin: 0 5px;
+}
+
+img.widescroll-top {
+    position: relative;
+    top: 25px;
+    padding: 0;
+    margin: 0;
+    z-index: 100;
+    display: block;
+}
+
+img.widescroll-bottom {
+    position: relative;
+    padding: 0;
+    margin: 0;
+    top: -25px;
+    display: block;
+}
+
+div.widescroll-content a, div.horizontalscroll-content a, div.narrowscroll-content a {
+    color: #7B4F17;
+    font-weight: bold;
+}
+
+div.narrowscroll-bgimg {
+    width: 457px;
+    position: relative;
+    margin: 0 -5px;
+    background-image: url(../img/rsp777/scroll/scroll457t.gif);
+    background-repeat: repeat-y;
+}
+
+div.narrowscroll-bg {
+    width: 447px;
+    background-color: #C2AB79;
+    margin-left: 10px;
+}
+
+div.narrowscroll-content {
+    padding: 25px 10px;
+    color: #000000;
+    position: relative;
+    margin: 0 5px;
+}
+
+div.narrowscroll-content td {
+    color: #000000;
+}
+
+img.narrowscroll-top {
+    position: relative;
+    top: 25px;
+    padding: 0;
+    margin: 0;
+    z-index: 100;
+    display: block;
+}
+
+img.narrowscroll-bottom {
+    position: relative;
+    padding: 0;
+    margin: 0;
+    top: -25px;
+    display: block;
+}
+
+.widescrollWrapper {
+    margin: auto;
+    position: relative;
+    width: 764px;
+}
+
+.titleBackground {
+    background-position: center top;
+    background-repeat: no-repeat;
+    height: 90px;
+    margin-left: auto;
+    margin-right: auto;
+    padding: 4px;
+    width: 759px;
+}
+
+.titleFrame {
+    background-color: black;
+    border: 2px solid #382418;
+    padding: 2px 0;
+    position: relative;
+    text-align: center;
+    width: 155px;
+}
+
+
+.tweet .time a{
+ font-weight:bold;
+ color:#000;
+}
+#twitter{
+    border: 2px inset #CC9933;
+    text-align: center;
+}
+.tweet{
+    border-bottom: 1px solid black;
+    border-top: 1px solid #bb9966;
+    margin: 0 24px;
+    padding: 13px 0;
+    text-align: left;
+}
+.tweet:first-child{
+    border-top: none;
+}
+#twitter a.more{
+    border-top: 1px solid #bb9966;
+    clear: both;
+    display: block;
+    margin: 0 24px;
+    padding: 12px 0;
+    text-align: center;
+}
+a.osrsRSS{
+ left:735px;
+}
+/*------------- New header macro -------------*/
+.os-banner{
+    background: url('../img/rsp777/title2/rslogo3-gap.png') no-repeat center;
+    display: block;
+    min-height: 135px;
+    text-align: center;
+}
+.os-banner__options{
+    background: black;
+    border: 2px solid #382418;
+    display: inline-block;
+    margin-top: 45px;
+    padding: 3px 15px;
+}
+.os-banner__title{
+    display: block;
+    font-size: 13px;
+    font-weight: bold;
+    margin: 0 auto 3px;
+}
+.os-banner__home,
+.os-banner__child{
+    display: inline-block;
+    font-size: 13px;
+}
+.os-banner ~.contentWrapper {
+    margin-top: 0;
+}
+.footer__jagex-img {
+    width: 80px;
+}
