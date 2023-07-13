@@ -6,3 +6,4 @@ RewriteCond %{REQUEST_FILENAME} !-f
 RewriteRule ^([^\.]+)$ $1.html [NC, L]
 
 RedirectPermanent /store https://gladiatorps.everythingrs.com/services/store
+RedirectPermanent /vote https://gladiatorps.everythingrs.com/services/vote
