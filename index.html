@@ -39,7 +39,7 @@
          </header>
          <div class='contents'>
             <main class='main'>
-               <p class='player-count'>There are currently <span id="players"></span> online players!</p>
+               <p class='player-count'><span id="playerString"></span></p>
                <div class='home-nav'>
                   <nav class='home-nav__main-nav'>
                      <div class='home-nav__box'>
@@ -90,16 +90,19 @@
                               <a class='home-nav__link home-nav__link--exchange' id='osnav-exchange' data-test='osnav-exchange' href="https://secure.runescape.com/m=itemdb_oldschool/">Grand Exchange</a>
                               </li>-->
                            <li>
-                              <a class='home-nav__link home-nav__link--external home-nav__link--forum' id='osnav-forum' data-test='osnav-forum' href='https://www.gladiator-ps.com/forums' target='_blank' rel='noopener'>Visit Forums</a>
+                              <a class='home-nav__link home-nav__link--external home-nav__link--discord' id='osnav-discord' data-test='osnav-discord' href='https://discord.com/invite/GEhvYyBdZU' target='_blank' rel='noopener'>Visit Discord</a>
                            </li>
                            <li>
                               <a class='home-nav__link home-nav__link--external home-nav__link--shop' id='osnav-shop' data-test='osnav-shop' href='https://www.gladiator-ps.com/shop' target='_blank' rel='noopener'>Visit Shop</a>
                            </li>
                            <li>
-                              <a class='home-nav__link home-nav__link--external home-nav__link--shop' id='osnav-shop' data-test='osnav-shop' href='https://www.gladiator-ps.com/vote' target='_blank' rel='noopener'>Visit Voting</a>
+                              <a class='home-nav__link home-nav__link--external home-nav__link--vote' id='osnav-vote' data-test='osnav-vote' href='https://www.gladiator-ps.com/vote' target='_blank' rel='noopener'>Visit Voting</a>
                            </li>
                            <li>
                               <a class='home-nav__link home-nav__link--external home-nav__link--wiki' id='osnav-wiki' data-test='osnav-wiki' href='https://www.gladiator-ps.com/wiki' target='_blank' rel='noopener'>Visit Wiki</a>
+                           </li>
+                           <li>
+                              <a class='home-nav__link home-nav__link--external home-nav__link--forum' id='osnav-forum' data-test='osnav-forum' href='https://www.gladiator-ps.com/forums' target='_blank' rel='noopener'>Visit Forums</a>
                            </li>
                         </ul>
                      </div>
@@ -107,7 +110,7 @@
                         <h3 class='home-nav__title'>Help</h3>
                         <ul class='home-nav__list'>
                            <li>
-                              <a class='home-nav__link home-nav__link--support' id='osnav-support' data-test='osnav-support' href='#'>Support</a>
+                              <a class='home-nav__link home-nav__link--support' id='osnav-support' data-test='osnav-support' href='https://discord.com/invite/GEhvYyBdZU'>Support</a>
                            </li>
                         </ul>
                      </div>
@@ -177,13 +180,19 @@
          <script src='./js/jagex_global-101.js' data-cookieconsent='ignore'></script>
          <script src='./js/c/os/functions-153.js' async defer data-cookieconsent='ignore'></script>
          <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
-            <script type="text/javascript">
-                var accountName = "GladiatorPS";
-                $.get("https://everythingrs.com/api/players-online/get/" + accountName, function (response) {
-                    $("#players").html(response);
-                });
+         <script type="text/javascript">
+               var accountName = "GladiatorPS";
+               $.get("https://everythingrs.com/api/players-online/get/" + accountName, function (response) {
+                  $("#players").html(response);
+                  if ($("#players").html(response) != 1) {
+                     var playerString = "There are currently " + response + " players online!";
+                  } else {
+                        var playerString = "There is currently " + response + " player online!";
+                  }
+                  $("#playerString").html(playerString);
+               });
 
-            </script>
+         </script>
       </div>
       <script>var bStyle = document.getElementById('bConHide'); if (bStyle) bStyle.parentNode.removeChild(bStyle);</script>
    </body>
