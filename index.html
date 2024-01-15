@@ -145,7 +145,7 @@
                            Colosseum with Epic Bosses! 
                            </a>
                         </h3>
-                        <span class='news-article__sub'>Ajax | Game / web developer</span>
+                        <span class='news-article__sub'>Ajax | Game developer</span>
                         <p class='news-article__summary'>Defeat other players and beat challenging and unique bosses at the Colosseum! Great rewards will be given to the arena's victors!</p>
                      </div>
                   </article>
@@ -161,7 +161,7 @@
                            All 25 Skills + AFK Skilling!
                            </a>
                         </h3>
-                        <span class='news-article__sub'>Ajax | Game / web developer</span>
+                        <span class='news-article__sub'>Ajax | Game developer</span>
                         <p class='news-article__summary'>All 25 skills are trainable in Gladiator. There is also the AFK-skilling area, at which you can buy 'Genie', an extra XP pet!</p>
                      </div>
                   </article>
@@ -199,13 +199,12 @@
          <script src='./js/c/os/functions-153.js' async defer data-cookieconsent='ignore'></script>
          <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
          <script type="text/javascript">
-               var accountName = "GladiatorPS";
+               var accountName = "gladiatorps";
                $.get("https://everythingrs.com/api/players-online/get/" + accountName, function (response) {
-                  $("#players").html(response);
-                  if ($("#players").html(response) != 1) {
+                  if (response != 1) {
                      var playerString = "There are currently " + response + " players online!";
                   } else {
-                        var playerString = "There is currently " + response + " player online!";
+                     var playerString = "There is currently " + response + " player online!";
                   }
                   $("#playerString").html(playerString);
                });
